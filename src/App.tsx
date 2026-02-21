@@ -1,5 +1,5 @@
 import "./App.css";
-import dayatPhoto from "./assets/Unknown.jpeg";
+import Photo from "./assets/Unknown.jpeg";
 import GitHub from "./components/GitHub";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
       <section id="hero" className="hero-section">
         <div className="hero-content">
           <div className="hero-photo">
-            <img src={dayatPhoto} alt="Dayat" />
+            <img src={Photo} alt="Dayat" />
           </div>
           <h1>
             Halo, Saya <span className="highlight">Tamac</span>
