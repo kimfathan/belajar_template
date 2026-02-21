@@ -1,5 +1,5 @@
 import "./App.css";
-import dayatPhoto from "./assets/dayat.jpg";
+import dayatPhoto from "./assets/Unknown.jpeg";
 import GitHub from "./components/GitHub";
 
 function App() {
