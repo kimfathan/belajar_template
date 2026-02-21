@@ -93,7 +93,7 @@ function App() {
         </div>
       </section>
 
-      {/* <GitHub /> */}
+      <GitHub />
 
       {/* Contact Section */}
       <section id="contact" className="contact-section">
