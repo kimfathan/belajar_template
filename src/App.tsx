@@ -1,11 +1,11 @@
-import './App.css'
-import dayatPhoto from './assets/dayat.jpg'
-// import GitHub from './components/GitHub'
+import "./App.css";
+import dayatPhoto from "./assets/dayat.jpg";
+import GitHub from "./components/GitHub";
 
 function App() {
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="portfolio">
@@ -13,10 +13,18 @@ function App() {
       <nav className="navbar">
         <div className="nav-brand">Portfolio</div>
         <ul className="nav-links">
-          <li><button onClick={() => scrollTo('hero')}>Home</button></li>
-          <li><button onClick={() => scrollTo('about')}>About</button></li>
-          <li><button onClick={() => scrollTo('projects')}>Projects</button></li>
-          <li><button onClick={() => scrollTo('contact')}>Contact</button></li>
+          <li>
+            <button onClick={() => scrollTo("hero")}>Home</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("about")}>About</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("projects")}>Projects</button>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("contact")}>Contact</button>
+          </li>
         </ul>
       </nav>
 
@@ -26,9 +34,11 @@ function App() {
           <div className="hero-photo">
             <img src={dayatPhoto} alt="Dayat" />
           </div>
-          <h1>Halo, Saya <span className="highlight">Tamac</span></h1>
+          <h1>
+            Halo, Saya <span className="highlight">Tamac</span>
+          </h1>
           <p className="hero-subtitle">Web Developer & Designer</p>
-          <button className="cta-button" onClick={() => scrollTo('contact')}>
+          <button className="cta-button" onClick={() => scrollTo("contact")}>
             Hubungi Saya
           </button>
         </div>
@@ -65,7 +75,10 @@ function App() {
             <div className="project-card">
               <div className="project-icon">🌐</div>
               <h3>Website Portfolio</h3>
-              <p>Landing page portfolio pribadi yang dibangun dengan React dan TypeScript.</p>
+              <p>
+                Landing page portfolio pribadi yang dibangun dengan React dan
+                TypeScript.
+              </p>
               <div className="project-tags">
                 <span>React</span>
                 <span>TypeScript</span>
@@ -74,7 +87,10 @@ function App() {
             <div className="project-card">
               <div className="project-icon">🛒</div>
               <h3>E-Commerce App</h3>
-              <p>Aplikasi e-commerce lengkap dengan fitur keranjang belanja dan pembayaran.</p>
+              <p>
+                Aplikasi e-commerce lengkap dengan fitur keranjang belanja dan
+                pembayaran.
+              </p>
               <div className="project-tags">
                 <span>React</span>
                 <span>Node.js</span>
@@ -83,7 +99,10 @@ function App() {
             <div className="project-card">
               <div className="project-icon">📱</div>
               <h3>Task Manager</h3>
-              <p>Aplikasi manajemen tugas dengan fitur drag & drop dan notifikasi.</p>
+              <p>
+                Aplikasi manajemen tugas dengan fitur drag & drop dan
+                notifikasi.
+              </p>
               <div className="project-tags">
                 <span>TypeScript</span>
                 <span>CSS</span>
@@ -99,12 +118,16 @@ function App() {
       <section id="contact" className="contact-section">
         <div className="container">
           <h2 className="section-title">Contact</h2>
-          <p className="contact-subtitle">Tertarik untuk bekerja sama? Hubungi saya!</p>
+          <p className="contact-subtitle">
+            Tertarik untuk bekerja sama? Hubungi saya!
+          </p>
           <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder="Nama" required />
             <input type="email" placeholder="Email" required />
             <textarea placeholder="Pesan" rows={5} required></textarea>
-            <button type="submit" className="cta-button">Kirim Pesan</button>
+            <button type="submit" className="cta-button">
+              Kirim Pesan
+            </button>
           </form>
         </div>
       </section>
@@ -114,7 +137,7 @@ function App() {
         <p>&copy; 2026 Dayat. All rights reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
