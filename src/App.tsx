@@ -26,7 +26,7 @@ function App() {
           <div className="hero-photo">
             <img src={dayatPhoto} alt="Dayat" />
           </div>
-          <h1>Halo, Saya <span className="highlight">Dayat</span></h1>
+          <h1>Halo, Saya <span className="highlight">Tamac</span></h1>
           <p className="hero-subtitle">Web Developer & Designer</p>
           <button className="cta-button" onClick={() => scrollTo('contact')}>
             Hubungi Saya
